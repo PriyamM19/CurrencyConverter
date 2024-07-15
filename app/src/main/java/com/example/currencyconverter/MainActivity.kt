@@ -12,8 +12,9 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
+    // initializing variables
 
-    private lateinit var amountInput: EditText
+    private lateinit var amountInput: EditText     //declaring a non-null variable that will be initialized later.
     private lateinit var currencyFromSpinner: Spinner
     private lateinit var currencyToSpinner: Spinner
     private lateinit var convertButton: Button
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
     private var fromCurrency: String = ""
     private var toCurrency: String = ""
 
+    //setting up the user interface and initializes the variables with their corresponding views from the XML layout.
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -34,13 +36,13 @@ class MainActivity : AppCompatActivity() {
         countryInfoButton = findViewById(R.id.countryInfoButton)
 
         // Set up currency spinners
-        ArrayAdapter.createFromResource(
+        ArrayAdapter.createFromResource(    //setting up an ArrayAdapter for the Spinner views using a string array resource.
             this,
             R.array.currency_array,
             android.R.layout.simple_spinner_item
         ).also { adapter ->
-            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            currencyFromSpinner.adapter = adapter
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)    //sets the layout resource for the dropdown views of the spinner
+            currencyFromSpinner.adapter = adapter   //adapter to display its items.
             currencyToSpinner.adapter = adapter
         }
 
@@ -65,7 +67,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        // Convert button click listener
+        // Convert button click listener that convert currency values
         convertButton.setOnClickListener {
             updateCurrencyConversion()
         }
@@ -92,7 +94,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun convertCurrency(amount: Double, fromCurrency: String, toCurrency: String): Double {
-        // Example conversion rates (replace with your own logic or API)
+        // hardcoded values for currency conversion
         val conversionRates = mapOf(
             "INR" to mapOf("INR" to 1.0, "CAD" to 0.016, "USD" to 0.012, "JPY" to 1.90, "IRR" to 503.93, "GBP" to 0.0094, "KRW" to 16.47),
             "CAD" to mapOf("INR" to 61.20, "CAD" to 1.0, "USD" to 0.73, "JPY" to 115.67, "IRR" to 30841.24, "GBP" to 0.58, "KRW" to 1007.66),
@@ -101,10 +103,9 @@ class MainActivity : AppCompatActivity() {
             "IRR" to mapOf("INR" to 0.000032, "CAD" to 0.000032, "USD" to 0.000024, "JPY" to 0.0038, "IRR" to 1.0, "GBP" to 0.000019, "KRW" to 0.0033),
             "GBP" to mapOf("INR" to 1.73, "CAD" to 1.73, "USD" to 1.72, "JPY" to 200.50, "IRR" to 53457.40, "GBP" to 1.0, "KRW" to 1746.65),
             "KRW" to mapOf("INR" to 0.00099, "CAD" to 0.00099, "USD" to 0.00073, "JPY" to 0.11, "IRR" to 30.61, "GBP" to 0.00057, "KRW" to 1.0)
-            // Add more conversion rates as needed
         )
 
-        // Retrieve the conversion rate from the map
+        // Retrieving the conversion rate from the map
         val rate = conversionRates[fromCurrency]?.get(toCurrency) ?: 1.0
         return amount * rate
     }
