@@ -1,0 +1,70 @@
+
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string name="enter_amount">Enter amount in CAD</string>
+    <string name="convert">Convert</string>
+    <string name="converted_amount_placeholder">Converted amount will appear here</string>
+    <string name="please_enter_valid_amount_and_currency">Please enter a valid amount and select a currency.</string>
+
+    <!-- Currency Names for Spinner -->
+    <string-array name="currency_array">
+        <item>INR</item>
+        <item>CAD</item>
+        <item>USD</item>
+        <item>JPY</item>
+        <item>IRR</item>
+        <item>GBP</item>
+        <item>KRW</item>
+        <!-- Add more currencies as needed -->
+    </string-array>
+
+    <!-- Country Info -->
+    <string name="country_not_found">Country Not Found</string>
+
+    <string name="india">Country Name : India</string>
+    <string name="new_delhi">Capital : New Delhi</string>
+    <string name="population_india">Population : 1.417 billion</string>
+    <string name="info_india">India, officially the Republic of India (ISO: Bhārat Gaṇarājya), is a country in South Asia. It is the seventh-largest country by area; the most populous country as of June 2023 and from the time of its independence in 1947, the worlds most populous democracy. Bounded by the Indian Ocean on the south, the Arabian Sea on the southwest, and the Bay of Bengal on the southeast</string>
+    <string name="lang_india">Official Languages : English, Hindi</string>
+
+    <string name="canada">Country Name : Canada</string>
+    <string name="ottawa">Capital : Ottawa</string>
+    <string name="population_cad">Population : 38.93 million </string>
+    <string name="info_cad">Canada is a country in North America. Its ten provinces and three territories extend from the Atlantic Ocean to the Pacific Ocean and northward into the Arctic Ocean, making it the worlds second-largest country by total area, with the worlds longest coastline. Its border with the United States is the worlds longest international land border. The country is characterized by a wide range of both meteorologic and geological regions. </string>
+    <string name="lang_cad">Official Languages : English, French</string>
+
+
+    <string name="usa">Country Name : United States of America</string>
+    <string name="washington">Capital : Washington, D.C.</string>
+    <string name="population_usa">Population : 333.3 million </string>
+    <string name="info_usa">The United States of America (USA or U.S.A.), commonly known as the United States (US or U.S.) or America, is a country primarily located in North America. It is a federation of 50 states, which also includes its federal capital district of Washington, D.C., and 326 Indian reservations. The 48 contiguous states border Canada to the north and Mexico to the south. </string>
+    <string name="lang_usa">Official Languages : English</string>
+
+
+    <string name="japan">Country Name : Japan</string>
+    <string name="tokyo">Capital : Tokyo </string>
+    <string name="population_japan">Population : 125.1 million </string>
+    <string name="info_japan">Japan is an island country in East Asia, located in the Pacific Ocean off the northeast coast of the Asian mainland. It is bordered on the west by the Sea of Japan and extends from the Sea of Okhotsk in the north to the East China Sea in the south. The Japanese archipelago consists of four major islands—Hokkaido, Honshu, Shikoku, and Kyushu—and thousands of smaller islands, covering around 380,000 square kilometres (150,000 sq mi). </string>
+    <string name="lang_japan">Official Languages : Japanese</string>
+
+    <string name="iran">Country Name : Iran</string>
+    <string name="tehran">Capital : Tehran </string>
+    <string name="population_iran">Population : 88.55 million </string>
+    <string name="info_iran">Iran,[a] officially the Islamic Republic of Iran (IRI), also known as Persia, is a country in West Asia. It borders Turkey to the northwest and Iraq to the west, Azerbaijan, Armenia, the Caspian Sea and Turkmenistan to the north, Afghanistan to the east, Pakistan to the southeast, the Gulf of Oman and the Persian Gulf to the south. </string>
+    <string name="lang_iran">Official Languages : Persian</string>
+
+    <string name="uk">Country Name : United Kingdom</string>
+    <string name="london">Capital : London </string>
+    <string name="population_uk">Population : 66.97 million </string>
+    <string name="info_uk">The United Kingdom of Great Britain and Northern Ireland, commonly known as the United Kingdom (UK) or Britain, is a country in Northwestern Europe, off the coast of the continental mainland. It comprises England, Scotland, Wales, and Northern Ireland. The UK includes the island of Great Britain, the north-eastern part of the island of Ireland, and most of the smaller islands within the British Isles.</string>
+    <string name="lang_uk">Official Languages : English</string>
+
+    <string name="sk">Country Name : South Korea</string>
+    <string name="seoul">Capital : Seoul </string>
+    <string name="population_sk">Population : 51.63 million </string>
+    <string name="info_sk">South Korea,[c] officially the Republic of Korea (ROK), is a country in East Asia. It constitutes the southern part of the Korean Peninsula and borders North Korea along the Korean Demilitarized Zone; though it also claims the land border with China and Russia. The countrys western border is formed by the Yellow Sea, while its eastern border is defined by the Sea of Japan.</string>
+    <string name="lang_sk">Official Languages : Korean</string>
+
+    <!-- Back Navigation -->
+    <string name="back">Back</string>
+</resources>
