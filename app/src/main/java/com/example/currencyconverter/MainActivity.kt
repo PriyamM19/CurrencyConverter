@@ -94,7 +94,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun convertCurrency(amount: Double, fromCurrency: String, toCurrency: String): Double {
-        // hardcoded values for currency conversion
+        // hardcoded values for currency conversion from predefined countries
         val conversionRates = mapOf(
             "INR" to mapOf("INR" to 1.0, "CAD" to 0.016, "USD" to 0.012, "JPY" to 1.90, "IRR" to 503.93, "GBP" to 0.0094, "KRW" to 16.47),
             "CAD" to mapOf("INR" to 61.20, "CAD" to 1.0, "USD" to 0.73, "JPY" to 115.67, "IRR" to 30841.24, "GBP" to 0.58, "KRW" to 1007.66),
